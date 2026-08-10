@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Indra Biology — No.1 Biology Class in Bihar | NEET Coaching, Kankarbagh Patna</title>
+<meta name="description" content="Indra Biology — No.1 Biology Class in Bihar, Kankarbagh Patna. NEET UG coaching & Class 11-12 Foundation. Right Guidance, Best Faculty, Proven Results. Call 9771722233. www.indrabiology.in">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#071527;
+    --navy-900:#0C2140;
+    --navy-800:#123561;
+    --navy-700:#1A4A85;
+    --green-600:#1E8449;
+    --green-500:#25A854;
+    --green-300:#8FE0AC;
+    --gold-500:#F5B301;
+    --gold-300:#FFD766;
+    --purple-600:#6B3FA0;
+    --orange-600:#E0622C;
+    --paper:#F6F7F9;
+    --paper-warm:#FBFAF6;
+    --ink-900:#0B1730;
+    --ink-600:#4B5470;
+    --ink-400:#828AA3;
+    --line:rgba(11,23,48,0.1);
+    --shadow:0 26px 60px -28px rgba(7,21,39,0.4);
+    --ease:cubic-bezier(.19,.86,.28,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'Manrope',sans-serif;color:var(--ink-900);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-0.01em;margin:0;color:var(--navy-950);}
+  p{margin:0;line-height:1.65;color:var(--ink-600);}
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .mono{font-family:'Space Mono',monospace;}
+  .container{width:min(1180px,92%);margin:0 auto;}
+  ::selection{background:var(--gold-500);color:var(--navy-950);}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}}
+  :focus-visible{outline:2px solid var(--gold-500);outline-offset:3px;}
+
+  .eyebrow{font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.14em;font-size:.7rem;font-weight:700;color:var(--green-600);display:inline-flex;align-items:center;gap:.5rem;}
+  .eyebrow::before{content:'';width:16px;height:2px;background:var(--gold-500);display:inline-block;}
+  section{position:relative;}
+
+  .fade{opacity:0;transition:opacity .9s var(--ease);}
+  .fade.in{opacity:1;}
+  .fade-stagger>*{opacity:0;transition:opacity .7s var(--ease);}
+  .fade-stagger.in>*{opacity:1;}
+  .fade-stagger.in>*:nth-child(1){transition-delay:.05s;}
+  .fade-stagger.in>*:nth-child(2){transition-delay:.14s;}
+  .fade-stagger.in>*:nth-child(3){transition-delay:.23s;}
+  .fade-stagger.in>*:nth-child(4){transition-delay:.32s;}
+  .fade-stagger.in>*:nth-child(5){transition-delay:.41s;}
+  .fade-stagger.in>*:nth-child(6){transition-delay:.5s;}
+
+  .btn{display:inline-flex;align-items:center;gap:.55em;padding:.95rem 1.7rem;border-radius:8px;font-weight:700;font-size:.92rem;cursor:pointer;border:1.5px solid transparent;white-space:nowrap;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s var(--ease);min-height:46px;font-family:'Manrope',sans-serif;}
+  .btn-gold{background:var(--gold-500);color:var(--navy-950);box-shadow:0 14px 28px -12px rgba(245,179,1,.55);}
+  .btn-gold:hover{transform:translateY(-3px);background:var(--gold-300);}
+  .btn-green{background:var(--green-600);color:#fff;}
+  .btn-green:hover{transform:translateY(-3px);background:var(--green-500);}
+  .btn-outline{background:transparent;border-color:rgba(255,255,255,.35);color:#fff;}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-3px);}
+  .btn svg{width:17px;height:17px;flex:none;}
+
+  /* ---------- minimal header, no center nav ---------- */
+  .site-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:1rem 0;padding-top:calc(1rem + env(safe-area-inset-top,0px));transition:padding .4s var(--ease),background .4s var(--ease),box-shadow .4s var(--ease);}
+  .site-header.scrolled{padding:.6rem 0;padding-top:calc(.6rem + env(safe-area-inset-top,0px));background:rgba(7,21,39,.92);backdrop-filter:blur(14px);box-shadow:0 8px 30px -20px rgba(0,0,0,.5);}
+  .nav-wrap{width:min(1180px,92%);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.55rem;min-width:0;}
+  .brand-icon{width:38px;height:38px;flex:none;object-fit:contain;}
+  .brand-word{display:flex;flex-direction:column;line-height:1.05;}
+  .brand-word b{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:1.15rem;color:#fff;letter-spacing:.01em;}
+  .brand-word b em{font-style:normal;color:var(--green-500);}
+  .brand-word span{font-family:'Space Mono',monospace;font-size:.58rem;color:var(--gold-300);letter-spacing:.1em;text-transform:uppercase;}
+  .header-actions{display:flex;align-items:center;gap:.6rem;flex:none;}
+  .icon-btn{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);transition:transform .3s var(--ease),background .3s var(--ease);flex:none;}
+  .icon-btn:hover{transform:translateY(-2px);background:var(--green-600);}
+  .icon-btn svg{width:18px;height:18px;color:#fff;}
+  .icon-btn.wa svg{color:#fff;}
+  .menu-toggle{display:flex;flex-direction:column;gap:5px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);cursor:pointer;padding:10px;width:44px;height:44px;align-items:center;justify-content:center;flex:none;border-radius:50%;}
+  .menu-toggle span{width:18px;height:2px;background:#fff;border-radius:2px;transition:transform .3s var(--ease),opacity .3s var(--ease);}
+  .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0;}
+  .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  .drawer{position:fixed;inset:0;z-index:99;background:var(--navy-950);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.8rem;opacity:0;pointer-events:none;transition:opacity .4s var(--ease);padding:2rem;}
+  .drawer.open{opacity:1;pointer-events:auto;}
+  .drawer a{color:#fff;font-family:'Space Grotesk',sans-serif;font-size:1.7rem;font-weight:700;}
+  .drawer a:hover{color:var(--green-500);}
+  .drawer-close{position:absolute;top:calc(1.2rem + env(safe-area-inset-top,0px));right:1.2rem;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;}
+  .drawer-close svg{width:20px;height:20px;color:#fff;}
+  .drawer-meta{margin-top:1rem;font-family:'Space Mono',monospace;color:var(--gold-300);font-size:.85rem;}
+
+  /* ---------- hero: full-bleed centered statement, DNA backdrop ---------- */
+  .hero{background:var(--navy-950);padding:8.5rem 0 4rem;position:relative;overflow:hidden;min-height:92vh;display:flex;align-items:center;}
+  .dna-field{position:absolute;inset:0;z-index:0;opacity:.5;-webkit-mask-image:linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%);mask-image:linear-gradient(to bottom, transparent 0%, black 14%, black 86%, transparent 100%);}
+  .dna-field svg{width:100%;height:100%;}
+  .hero-inner{position:relative;z-index:2;text-align:center;}
+  .hero-inner .eyebrow{color:var(--gold-300);justify-content:center;}
+  .hero-inner .eyebrow::before{background:var(--gold-300);}
+  .hero-inner h1{color:#fff;font-size:clamp(2.4rem,6.4vw,4.6rem);line-height:1.06;margin:1.1rem auto 1.3rem;max-width:22ch;}
+  .hero-inner h1 .accent{color:var(--green-500);}
+  .hero-inner .lede{color:rgba(255,255,255,.68);font-size:1.05rem;max-width:52ch;margin:0 auto 2.2rem;}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center;margin-bottom:3rem;}
+  .proof-row{display:flex;justify-content:center;gap:0;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding-top:2rem;max-width:760px;margin:0 auto;}
+  .proof-item{padding:0 1.6rem;border-right:1px solid rgba(255,255,255,.12);}
+  .proof-item:last-child{border-right:none;}
+  .proof-item b{display:block;font-family:'Space Mono',monospace;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--gold-300);}
+  .proof-item span{font-size:.72rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.06em;}
+  @media (max-width:700px){
+    .hero{padding-top:6.5rem;min-height:auto;}
+    .hero-actions{flex-direction:column;align-items:stretch;}
+    .hero-actions .btn{width:100%;justify-content:center;}
+    .proof-item{padding:.6rem 1rem;border-right:none;border-bottom:1px solid rgba(255,255,255,.1);flex:1 1 45%;}
+  }
+
+  /* ---------- director ---------- */
+  .director-section{padding:5.5rem 0;background:#fff;}
+  .director-grid{display:grid;grid-template-columns:0.55fr 1.45fr;gap:3rem;align-items:center;}
+  .director-photo-wrap{position:relative;}
+  .director-frame{aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,var(--navy-900),var(--navy-950));display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);font-family:'Space Mono',monospace;font-size:.78rem;text-align:center;padding:1.5rem;border:2px dashed rgba(255,255,255,.18);}
+  .director-badge{position:absolute;bottom:-16px;left:-16px;background:var(--gold-500);color:var(--navy-950);font-family:'Space Mono',monospace;font-weight:700;font-size:.72rem;padding:.6rem .9rem;border-radius:10px;box-shadow:var(--shadow);}
+  .director-copy .quote-mark{font-family:'Space Grotesk',sans-serif;font-size:3.5rem;color:var(--green-300);line-height:.6;margin-bottom:.6rem;display:block;}
+  .director-copy h2{font-size:clamp(1.6rem,2.8vw,2.1rem);margin:.4rem 0 1.1rem;}
+  .director-copy .role{font-family:'Space Mono',monospace;font-size:.78rem;color:var(--green-600);text-transform:uppercase;letter-spacing:.08em;display:block;margin-bottom:1.2rem;}
+  @media (max-width:860px){.director-grid{grid-template-columns:1fr;}.director-photo-wrap{max-width:260px;margin:0 auto;}}
+  @media (max-width:560px){.director-section{padding:3.5rem 0;}}
+
+  /* ---------- results: racing bar chart ---------- */
+  .results-section{padding:6rem 0;background:var(--paper);}
+  .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;}
+  .results-copy h2{font-size:clamp(1.8rem,3vw,2.4rem);margin:.7rem 0 1.1rem;}
+  .badge-strip{display:flex;gap:1rem;margin-top:1.6rem;flex-wrap:wrap;}
+  .badge-pill{background:var(--navy-950);color:var(--gold-300);font-family:'Space Mono',monospace;font-size:.78rem;padding:.65rem 1.1rem;border-radius:999px;}
+  .chart-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:2rem 1.8rem 1.6rem;box-shadow:var(--shadow);}
+  .chart-panel .tag{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-400);display:block;margin-bottom:1.2rem;}
+  .race-row{display:grid;grid-template-columns:64px 1fr 44px;align-items:center;gap:.8rem;margin-bottom:.85rem;}
+  .race-row .yr{font-family:'Space Mono',monospace;font-size:.75rem;color:var(--ink-600);}
+  .race-track{height:22px;background:var(--paper);border-radius:6px;overflow:hidden;}
+  .race-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--green-600),var(--green-500));width:0;transition:width 1.6s var(--ease);}
+  .race-row .val{font-family:'Space Mono',monospace;font-size:.85rem;font-weight:700;color:var(--navy-950);text-align:right;}
+  @media (max-width:900px){.results-grid{grid-template-columns:1fr;}}
+  @media (max-width:560px){.results-section{padding:4rem 0;}.race-row{grid-template-columns:48px 1fr 36px;}}
+
+  /* ---------- programs: tab switcher ---------- */
+  .programs-section{padding:6.5rem 0;background:var(--navy-950);}
+  .programs-section .eyebrow{color:var(--gold-300);}
+  .programs-section .eyebrow::before{background:var(--gold-300);}
+  .programs-head{max-width:640px;margin-bottom:2.6rem;}
+  .programs-head h2{color:#fff;font-size:clamp(1.9rem,3.4vw,2.5rem);margin:.7rem 0 0;}
+  .tab-bar{display:flex;gap:.6rem;margin-bottom:2.2rem;flex-wrap:wrap;}
+  .tab-btn{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.7);padding:.8rem 1.4rem;border-radius:999px;font-family:'Space Mono',monospace;font-size:.82rem;cursor:pointer;transition:all .3s var(--ease);}
+  .tab-btn.active{background:var(--green-600);border-color:var(--green-600);color:#fff;}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start;}
+  .tab-copy h3{color:#fff;font-size:1.5rem;margin-bottom:.8rem;}
+  .tab-copy .dur{font-family:'Space Mono',monospace;color:var(--gold-300);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:1rem;}
+  .tab-copy p{color:rgba(255,255,255,.65);}
+  .subject-blocks{display:flex;flex-direction:column;gap:.9rem;}
+  .subject-block{border-radius:14px;padding:1.2rem 1.4rem;color:#fff;}
+  .subject-block b{display:block;font-family:'Space Grotesk',sans-serif;font-size:1.1rem;margin-bottom:.3rem;}
+  .subject-block span{font-size:.82rem;opacity:.85;}
+  .sb-physics{background:linear-gradient(135deg,var(--purple-600),#4A2870);}
+  .sb-chemistry{background:linear-gradient(135deg,var(--orange-600),#B4491E);}
+  .sb-biology{background:linear-gradient(135deg,var(--green-600),#166534);}
+  @media (max-width:860px){.tab-panel.active{grid-template-columns:1fr;}}
+  @media (max-width:560px){.programs-section{padding:4rem 0;}}
+
+  /* ---------- why us: icon strip ---------- */
+  .why-section{padding:5.5rem 0;background:#fff;}
+  .why-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;}
+  .why-item{
+    position:relative;text-align:left;padding:1.8rem 1.6rem 1.6rem;border:1px solid var(--line);border-radius:18px;
+    background:var(--paper-warm);cursor:default;overflow:hidden;
+    transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s var(--ease),background .4s var(--ease);
+  }
+  .why-item:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--green-500);background:#fff;}
+  .why-num{position:absolute;top:1.2rem;right:1.3rem;font-family:'Space Mono',monospace;font-size:.72rem;color:var(--ink-400);opacity:.6;}
+  .why-icon{
+    width:52px;height:52px;border-radius:14px;background:var(--paper);display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;
+    transition:background .4s var(--ease),transform .4s var(--ease);
+  }
+  .why-item:hover .why-icon{background:var(--green-600);transform:rotate(-6deg) scale(1.06);}
+  .why-icon svg{width:24px;height:24px;color:var(--green-600);transition:color .4s var(--ease);}
+  .why-item:hover .why-icon svg{color:#fff;}
+  .why-item h3{font-size:1.02rem;font-weight:700;color:var(--navy-950);margin-bottom:.45rem;}
+  .why-item p{font-size:.85rem;color:var(--ink-600);line-height:1.55;margin-bottom:1rem;}
+  .why-check{display:flex;align-items:center;gap:.5rem;}
+  .why-check svg{width:20px;height:20px;flex:none;}
+  .why-check circle{stroke:var(--green-600);stroke-width:1.6;fill:none;stroke-dasharray:44;stroke-dashoffset:44;transition:stroke-dashoffset .6s var(--ease) .15s;}
+  .why-check path{stroke:var(--green-600);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:16;stroke-dashoffset:16;transition:stroke-dashoffset .35s var(--ease) .55s;}
+  .why-item.checked .why-check circle{stroke-dashoffset:0;}
+  .why-item.checked .why-check path{stroke-dashoffset:0;}
+  .why-check span{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--green-600);letter-spacing:.04em;text-transform:uppercase;}
+  @media (max-width:860px){.why-strip{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.why-strip{grid-template-columns:1fr;}.why-section{padding:3.5rem 0;}}
+
+  /* ---------- testimonials: marquee ---------- */
+  .testi-section{padding:5.5rem 0;background:var(--paper);overflow:hidden;}
+  .testi-head{text-align:center;max-width:520px;margin:0 auto 2.6rem;}
+  .testi-head h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-top:.6rem;}
+  .marquee-row{display:flex;gap:1.2rem;width:max-content;animation:scrollx 38s linear infinite;}
+  .marquee-row:hover{animation-play-state:paused;}
+  @keyframes scrollx{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  .testi-card{width:300px;flex:none;background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.6rem;box-shadow:var(--shadow);}
+  .testi-stars{display:flex;gap:2px;margin-bottom:.8rem;}
+  .testi-stars svg{width:14px;height:14px;color:var(--gold-500);}
+  .testi-card q{font-size:.9rem;color:var(--ink-900);font-style:italic;display:block;margin-bottom:1rem;line-height:1.6;}
+  .testi-card b{font-size:.85rem;color:var(--navy-950);}
+  .testi-card span{font-size:.75rem;color:var(--ink-400);}
+  @media (max-width:560px){.testi-section{padding:3.5rem 0;}.testi-card{width:250px;}}
+
+  /* ---------- gallery: scroll-snap strip ---------- */
+  .gallery-section{padding:5.5rem 0;background:#fff;}
+  .gallery-head{max-width:520px;margin-bottom:2rem;}
+  .gallery-head h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-top:.6rem;}
+  .gallery-scroll{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem;-webkit-overflow-scrolling:touch;}
+  .gallery-scroll::-webkit-scrollbar{height:8px;}
+  .gallery-scroll::-webkit-scrollbar-thumb{background:var(--navy-800);border-radius:8px;}
+  .gallery-item{flex:none;width:280px;aspect-ratio:4/3;border-radius:16px;overflow:hidden;scroll-snap-align:start;background:var(--paper);}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;}
+  @media (max-width:560px){.gallery-section{padding:3.5rem 0;}.gallery-item{width:220px;}}
+
+  /* ---------- contact / whatsapp enquiry ---------- */
+  .contact-section{padding:6.5rem 0 9rem;background:var(--navy-950);}
+  .contact-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:3rem;}
+  .contact-copy .eyebrow{color:var(--gold-300);}
+  .contact-copy .eyebrow::before{background:var(--gold-300);}
+  .contact-copy h2{color:#fff;font-size:clamp(1.8rem,3vw,2.3rem);margin:.7rem 0 1.4rem;}
+  .info-row{display:flex;gap:1rem;padding:1rem 0;border-top:1px solid rgba(255,255,255,.12);}
+  .info-row:last-child{border-bottom:1px solid rgba(255,255,255,.12);}
+  .info-row svg{width:20px;height:20px;color:var(--green-500);flex:none;margin-top:2px;}
+  .info-row b{display:block;font-size:.92rem;color:#fff;}
+  .info-row span{font-size:.87rem;color:rgba(255,255,255,.6);}
+  .enquiry-panel{background:#0F2748;border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:2.2rem;}
+  .enquiry-panel .wa-tag{display:flex;align-items:center;gap:.6rem;margin-bottom:1.4rem;}
+  .enquiry-panel .wa-tag svg{width:22px;height:22px;color:#25D366;}
+  .enquiry-panel .wa-tag span{font-family:'Space Mono',monospace;font-size:.78rem;color:rgba(255,255,255,.6);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+  .field{display:flex;flex-direction:column;gap:.4rem;}
+  .field.full{grid-column:1/-1;}
+  label{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.8);}
+  input,select,textarea{font-family:'Manrope',sans-serif;font-size:1rem;padding:.8rem 1rem;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#fff;width:100%;transition:border-color .3s;}
+  input::placeholder,textarea::placeholder{color:rgba(255,255,255,.35);}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-500);}
+  select option{color:#000;}
+  textarea{resize:vertical;min-height:80px;}
+  .enquiry-panel .btn{width:100%;justify-content:center;margin-top:.4rem;background:#25D366;color:#fff;}
+  .enquiry-panel .btn:hover{background:#1EBE5B;transform:translateY(-3px);}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+  @media (max-width:560px){.contact-section{padding:4rem 0 8rem;}.form-row{grid-template-columns:1fr;}.enquiry-panel{padding:1.5rem;}}
+
+  /* ---------- footer ---------- */
+  footer{background:#050F1F;color:rgba(255,255,255,.55);padding:3rem 0 7rem;}
+  .footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(255,255,255,.08);}
+  .footer-brand{display:flex;align-items:center;gap:.6rem;}
+  .footer-brand svg{width:30px;height:30px;}
+  .footer-brand b{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;color:#fff;}
+  .footer-nav{display:flex;gap:1.5rem;list-style:none;padding:0;margin:0;flex-wrap:wrap;}
+  .footer-nav a:hover{color:#fff;}
+  .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1.4rem;font-size:.78rem;}
+  @media (max-width:600px){.footer-top{flex-direction:column;gap:1.2rem;}.footer-bottom{flex-direction:column;gap:.4rem;}}
+
+  /* ---------- sticky bottom CTA bar ---------- */
+  .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:95;display:flex;background:#fff;box-shadow:0 -14px 40px -20px rgba(0,0,0,.35);transform:translateY(100%);transition:transform .4s var(--ease);padding-bottom:env(safe-area-inset-bottom,0px);}
+  .sticky-cta.show{transform:translateY(0);}
+  .sticky-cta a{flex:1;display:flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem;font-family:'Manrope',sans-serif;font-weight:700;font-size:.9rem;}
+  .sticky-cta a svg{width:18px;height:18px;}
+  .sticky-cta .call{background:var(--navy-950);color:#fff;}
+  .sticky-cta .wa{background:#25D366;color:#fff;}
+
+  ::-webkit-scrollbar{width:10px;}
+  ::-webkit-scrollbar-track{background:var(--paper);}
+  ::-webkit-scrollbar-thumb{background:var(--navy-800);border-radius:8px;}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#top" class="brand">
+      <img class="brand-icon" src="https://res.cloudinary.com/dq9zci7j1/image/upload/v1786347434/Screenshot_2026-08-09_181020_hi94ok.jpg" alt="Indra Biology logo">
+      <span class="brand-word"><b>Indra <em>Biology</em></b><span>No.1 Biology Class in Bihar</span></span>
+    </a>
+    <div class="header-actions">
+      <a class="icon-btn" href="tel:+919771722233" aria-label="Call">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="icon-btn wa" href="https://wa.me/919771722233?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Indra%20Biology." target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.8 14.7 3.3 13.4 3.3 12c0-4.8 3.9-8.7 8.7-8.7s8.7 3.9 8.7 8.7-3.9 8.7-8.7 8.7zm4.7-6.5c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.4-1.8-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.4.1-.2 0-.4 0-.5C10.2 9.5 9.7 8.3 9.5 7.8c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-1 .9-1 2.3s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2-.1-.2-.3-.2-.5-.3z"/></svg>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <a href="#director">Director's Message</a>
+  <a href="#results">Results</a>
+  <a href="#programs">Programs</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <span class="drawer-meta">Kankarbagh, Patna &middot; 97717 22233</span>
+</div>
+
+<section class="hero" id="top">
+  <div class="dna-field" id="dnaField"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow fade" id="fx1">Kankarbagh, Patna &middot; NEET Biology Specialists</p>
+    <h1 class="fade" id="fx2">Your dream doctor<br>career <span class="accent">starts here.</span></h1>
+    <p class="lede fade" id="fx3">We don't just teach biology — we build doctors. NEET UG coaching and Class 11-12 Foundation, led by faculty with a decade of proven NEET selections.</p>
+    <div class="hero-actions fade" id="fx4">
+      <a class="btn btn-gold" href="#contact">Enrol Now</a>
+      <a class="btn btn-outline" href="https://wa.me/919771722233?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Indra%20Biology." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+    <div class="proof-row fade" id="fx5">
+      <div class="proof-item"><b class="mono">114+</b><span>NEET Selections '19</span></div>
+      <div class="proof-item"><b class="mono">250+</b><span>Top Rankers</span></div>
+      <div class="proof-item"><b class="mono">10+</b><span>Years Guiding NEET</span></div>
+      <div class="proof-item"><b class="mono">3</b><span>Focused Programs</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="director-section" id="director">
+  <div class="container director-grid">
+    <div class="director-photo-wrap fade">
+      <div class="director-frame">Director's photo goes here — swap this block for Indra Mohan Sir's photo</div>
+      <div class="director-badge">HOD &amp; Senior Faculty</div>
+    </div>
+    <div class="director-copy fade">
+      <span class="quote-mark">&ldquo;</span>
+      <p style="font-size:1.05rem;color:var(--ink-900);max-width:60ch;">We don't just teach biology — we build the discipline, clarity and confidence it takes to become a doctor. Every student who walks in gets the same right guidance that took our early batches from 15 selections to over a hundred.</p>
+      <span class="role" style="margin-top:1.2rem;">Indra Mohan &middot; Director &amp; Founder</span>
+      <h2>10+ years turning biology students into NEET doctors</h2>
+      <p>Indra Biology — Bihar’s No.1 Biology Class — has been guiding NEET aspirants from Kankarbagh, Patna since 2010. Right guidance, best faculty, proven results.</p>
+    </div>
+  </div>
+</section>
+
+<section class="results-section" id="results">
+  <div class="container results-grid">
+    <div class="results-copy fade">
+      <p class="eyebrow">Proven results</p>
+      <h2>A decade of NEET selections, rising every batch</h2>
+      <p>We track our own progress as closely as we track yours. Here's how our NEET UG selections have grown, year on year.</p>
+      <div class="badge-strip">
+        <span class="badge-pill">★ We don't just teach, we make doctors</span>
+      </div>
+    </div>
+    <div class="chart-panel fade" id="chartPanel">
+      <span class="tag">NEET Selections by Year</span>
+      <div class="race-row"><span class="yr mono">2010</span><div class="race-track"><div class="race-fill" data-target="13"></div></div><span class="val">15</span></div>
+      <div class="race-row"><span class="yr mono">2014</span><div class="race-track"><div class="race-fill" data-target="22"></div></div><span class="val">25</span></div>
+      <div class="race-row"><span class="yr mono">2016</span><div class="race-track"><div class="race-fill" data-target="39"></div></div><span class="val">45</span></div>
+      <div class="race-row"><span class="yr mono">2019</span><div class="race-track"><div class="race-fill" data-target="100"></div></div><span class="val">114</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="programs-section" id="programs">
+  <div class="container">
+    <div class="programs-head fade">
+      <p class="eyebrow">Programs</p>
+      <h2>Pick your track</h2>
+    </div>
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="neet">NEET UG</button>
+      <button class="tab-btn" data-tab="foundation">Class 11-12 Foundation</button>
+    </div>
+    <div class="tab-panel active" data-panel="neet">
+      <div class="tab-copy">
+        <span class="dur">For 12th passed &amp; droppers</span>
+        <h3>NEET UG Program</h3>
+        <p>Your dream doctor career starts here. Right guidance, best faculty, and proven results — with regular test series, performance analysis, and personalized mentorship built around Biology as the deciding subject.</p>
+      </div>
+      <div class="subject-blocks">
+        <div class="subject-block sb-biology"><b>Concept Clarity &amp; Doubt Solving</b><span>NCERT-based, diagram-driven, detailed explanation</span></div>
+        <div class="subject-block sb-biology" style="background:linear-gradient(135deg,#166534,var(--green-600));"><b>Regular Test Series &amp; Performance Analysis</b><span>Track every attempt, fix every gap</span></div>
+        <div class="subject-block sb-biology" style="background:linear-gradient(135deg,#0d3f26,#166534);"><b>Personalized Mentorship</b><span>Right guidance today, successful tomorrow</span></div>
+      </div>
+    </div>
+    <div class="tab-panel" data-panel="foundation">
+      <div class="tab-copy">
+        <span class="dur">For Class 11th &amp; 12th &middot; All Boards</span>
+        <h3>Foundation Program</h3>
+        <p>Strong foundation today, bright future tomorrow. Complete preparation across Physics, Chemistry and Biology — built to give an early, disciplined head start on NEET.</p>
+      </div>
+      <div class="subject-blocks">
+        <div class="subject-block sb-physics"><b>Physics</b><span>NCERT concepts, problem solving, numerical practice — Concept Clarity, Better Scores</span></div>
+        <div class="subject-block sb-chemistry"><b>Chemistry</b><span>Easy-to-tough approach, reaction &amp; mechanism — Smart Concepts, High Scores</span></div>
+        <div class="subject-block sb-biology"><b>Biology</b><span>Diagram-based learning, detailed explanation — In-depth Understanding, Better Results</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="container">
+    <div class="programs-head" style="max-width:640px;">
+      <p class="eyebrow" style="color:var(--green-600);">Why Indra Biology</p>
+      <h2 style="color:var(--navy-950);">Right guidance, best faculty, proven results</h2>
+    </div>
+    <div class="why-strip fade-stagger">
+      <div class="why-item"><span class="why-num">01</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V6l8-3 8 3v13" stroke="currentColor" stroke-width="1.6"/><path d="M4 19h16M9 19v-6h6v6" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Experienced Faculty</h3><p>Senior faculty who've guided a decade of NEET selections, not first-year teachers.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+      <div class="why-item"><span class="why-num">02</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h11a3 3 0 013 3v12H7a3 3 0 01-3-3V5z" stroke="currentColor" stroke-width="1.6"/><path d="M4 5v14" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Updated Study Material</h3><p>NCERT-based, exam-aligned notes revised every session — never last decade's syllabus.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+      <div class="why-item"><span class="why-num">03</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6l-1 4H10L9 3z" stroke="currentColor" stroke-width="1.6"/><path d="M6 7h12v14H6z" stroke="currentColor" stroke-width="1.6"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Regular Test Series</h3><p>Weekly tests with detailed performance analysis, so weak spots get caught early.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+      <div class="why-item"><span class="why-num">04</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></div><h3>Concept Clarity</h3><p>Doubt-solving sessions that continue until every concept genuinely clicks.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+      <div class="why-item"><span class="why-num">05</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19l5-6 4 4 7-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Proven Strategy</h3><p>A results-first approach, refined over 10+ years of watching what actually moves scores.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+      <div class="why-item"><span class="why-num">06</span><div class="why-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Personalized Mentorship</h3><p>One-on-one guidance tailored to your specific weak areas, not a one-size batch plan.</p><div class="why-check"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="testi-section">
+  <div class="container">
+    <div class="testi-head fade">
+      <p class="eyebrow">Student reviews</p>
+      <h2>4.8 out of 5, from real students</h2>
+    </div>
+  </div>
+  <div class="marquee-row" id="marqueeRow">
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Indra Mohan sir is one of the best biology teachers.</q><b>Ashwin Singh</b><span>India</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>This is the institution where you can gain more knowledge. Best institute with quality education.</q><b>Legend</b><span>India</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>A good institution for NEET preparation.</q><b>Sohan Kumar</b><span>Patna</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Good for NEET preparation.</q><b>Rohit</b><span>Patna</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Best institute with quality education.</q><b>Sumit</b><span>India</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Indra Mohan sir is one of the best biology teachers.</q><b>Ashwin Singh</b><span>India</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>This is the institution where you can gain more knowledge. Best institute with quality education.</q><b>Legend</b><span>India</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>A good institution for NEET preparation.</q><b>Sohan Kumar</b><span>Patna</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Good for NEET preparation.</q><b>Rohit</b><span>Patna</span></div>
+    <div class="testi-card"><div class="testi-stars">★★★★★</div><q>Best institute with quality education.</q><b>Sumit</b><span>India</span></div>
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <div class="gallery-head fade">
+      <p class="eyebrow" style="color:var(--green-600);">Inside Indra Biology</p>
+      <h2>Classroom &amp; campus</h2>
+    </div>
+    <div class="gallery-scroll">
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/dr-win_351114785056.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/indra_34440695303.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/dr-win-patna-1_33179421262.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/dr-win-patna-3_32949058371.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/indra-biology_311748245744.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/dr-win-patna-6_301898491859.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+      <div class="gallery-item"><img src="https://indrabiology.com/uploads/gallery/dr-win-patna-2_29729874454.jpeg" alt="Indra Biology classroom" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy fade">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Right guidance today, successful tomorrow</h2>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+        <div><b>Address</b><span>Near Doctor Shipra Roy, Kendriya Vidyalay Road, Kankarbagh, Patna 20</span></div>
+      </div>
+      <div class="info-row">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <div><b>Phone</b><span>97717 22233</span></div>
+      </div>
+      <div style="margin-top:1.6rem;">
+        <a class="btn btn-green" href="tel:+919771722233">Call the institute</a>
+      </div>
+    </div>
+
+    <div class="enquiry-panel fade">
+      <div class="wa-tag">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2z"/></svg>
+        <span>Submits straight to our WhatsApp — instant reply</span>
+      </div>
+      <form id="enquiryForm">
+        <div class="form-row">
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" placeholder="Your name" required></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" required></div>
+        </div>
+        <div class="form-row">
+          <div class="field full"><label for="course">Interested in</label>
+            <select id="course" name="course" required>
+              <option value="">Select a program</option>
+              <option>NEET UG</option>
+              <option>Class 11-12 Foundation</option>
+              <option>Not sure — need guidance</option>
+            </select>
+          </div>
+        </div>
+        <div class="field full" style="margin-bottom:1rem;">
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" placeholder="Any questions before you enrol?"></textarea>
+        </div>
+        <button class="btn" type="submit">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px;"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2z"/></svg>
+          Send to WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="https://res.cloudinary.com/dq9zci7j1/image/upload/v1786347434/Screenshot_2026-08-09_181020_hi94ok.jpg" alt="Indra Biology logo" style="width:30px;height:30px;object-fit:contain;">
+        <b>Indra Biology</b>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="#director">Director</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Indra Biology. All rights reserved.</span>
+      <span>Kankarbagh, Patna &middot; 97717 22233</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a class="call" href="tel:+919771722233">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    Call Now
+  </a>
+  <a class="wa" href="https://wa.me/919771722233?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Indra%20Biology." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.4 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.9-1.4c1.5.8 3.2 1.3 5.1 1.3 5.5 0 10-4.4 10-10S17.5 2 12 2z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+  // header on scroll
+  const header = document.getElementById('siteHeader');
+  const stickyCta = document.getElementById('stickyCta');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+    stickyCta.classList.toggle('show', window.scrollY > window.innerHeight * 0.7);
+  }, {passive:true});
+
+  // drawer
+  const menuToggle = document.getElementById('menuToggle');
+  const drawer = document.getElementById('drawer');
+  const drawerClose = document.getElementById('drawerClose');
+  function openDrawer(){drawer.classList.add('open');menuToggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function closeDrawer(){drawer.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  menuToggle.addEventListener('click',()=> drawer.classList.contains('open') ? closeDrawer() : openDrawer());
+  drawerClose.addEventListener('click',closeDrawer);
+  drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeDrawer));
+
+  // fade reveal
+  const fadeEls = document.querySelectorAll('.fade,.fade-stagger');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.14});
+  fadeEls.forEach(el=>io.observe(el));
+
+  // hero entrance sequence (staggered, one-time)
+  window.addEventListener('load',()=>{
+    ['fx1','fx2','fx3','fx4','fx5'].forEach((id,i)=>{
+      setTimeout(()=> document.getElementById(id).classList.add('in'), 200 + i*180);
+    });
+  });
+
+  // DNA helix backdrop: the twist is baked into each row's fixed position (like a real
+  // corkscrew shape). The ONLY thing animated is a smooth vertical translate — because
+  // the shape itself is already twisted per-row, translating it upward reads as the
+  // helix rotating as it climbs (same principle as a barber pole).
+  (function(){
+    const field = document.getElementById('dnaField');
+    const ns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(ns,'svg');
+    svg.setAttribute('viewBox','0 0 800 800');
+    svg.setAttribute('preserveAspectRatio','xMidYMid slice');
+    field.appendChild(svg);
+
+    const RUNG_SPACING = 58;
+    const TWIST_PER_ROW = 0.45;         // radians of twist added per rung — the "corkscrew"
+    const ROWS = 40;                     // extra rows above/below viewport for seamless loop
+    const START_ROW = -14;
+    const LOOP_ROWS = 12;                // how many rungs the whole strand drifts before looping
+    const strandDefs = [
+      { cx: 130, opacity: 0.5,  duration: 26 },
+      { cx: 410, opacity: 0.4,  duration: 32 },
+      { cx: 690, opacity: 0.32, duration: 38 },
+    ];
+
+    const styleEl = document.createElement('style');
+    document.head.appendChild(styleEl);
+    let keyframeCss = '';
+
+    strandDefs.forEach((def, idx)=>{
+      const g = document.createElementNS(ns,'g');
+      g.setAttribute('opacity', def.opacity);
+      for(let r=0; r<ROWS; r++){
+        const i = START_ROW + r;
+        const y = i * RUNG_SPACING;
+        const twist = Math.sin(i * TWIST_PER_ROW);
+        const x1 = def.cx + twist * 46;
+        const x2 = def.cx - twist * 46;
+        const line = document.createElementNS(ns,'line');
+        line.setAttribute('x1',x1); line.setAttribute('y1',y);
+        line.setAttribute('x2',x2); line.setAttribute('y2',y);
+        line.setAttribute('stroke', i%2===0 ? '#25A854' : '#F5B301');
+        line.setAttribute('stroke-width','1.4');
+        line.setAttribute('opacity','0.4');
+        g.appendChild(line);
+        const c1 = document.createElementNS(ns,'circle');
+        c1.setAttribute('cx',x1); c1.setAttribute('cy',y); c1.setAttribute('r','4'); c1.setAttribute('fill','#25A854');
+        g.appendChild(c1);
+        const c2 = document.createElementNS(ns,'circle');
+        c2.setAttribute('cx',x2); c2.setAttribute('cy',y); c2.setAttribute('r','4'); c2.setAttribute('fill','#F5B301');
+        g.appendChild(c2);
+      }
+      const animName = `dnaDrift${idx}`;
+      const loopDist = LOOP_ROWS * RUNG_SPACING;
+      g.style.animation = `${animName} ${def.duration}s linear infinite`;
+      keyframeCss += `@keyframes ${animName}{from{transform:translateY(0);}to{transform:translateY(-${loopDist}px);}}`;
+      svg.appendChild(g);
+    });
+
+    styleEl.textContent = keyframeCss;
+  })();
+
+  // racing bar chart
+  const chartPanel = document.getElementById('chartPanel');
+  const chartIo = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.querySelectorAll('.race-fill').forEach((bar,i)=>{
+          setTimeout(()=> bar.style.width = bar.dataset.target + '%', i*180);
+        });
+        chartIo.unobserve(e.target);
+      }
+    });
+  },{threshold:0.35});
+  chartIo.observe(chartPanel);
+
+  // Why Indra Biology — staggered checkmark draw-in on scroll reveal
+  const whyItems = document.querySelectorAll('.why-item');
+  const whyIo = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        whyItems.forEach((item,i)=> setTimeout(()=> item.classList.add('checked'), i*130) );
+        whyIo.disconnect();
+      }
+    });
+  },{threshold:0.3});
+  if(whyItems.length){ whyIo.observe(whyItems[0]); }
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      tabBtns.forEach(b=>b.classList.remove('active'));
+      tabPanels.forEach(p=>p.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelector(`.tab-panel[data-panel="${btn.dataset.tab}"]`).classList.add('active');
+    });
+  });
+
+  // testimonials marquee duplicate for seamless loop (already duplicated in markup)
+
+  // enquiry form -> WhatsApp deep link
+  const enquiryForm = document.getElementById('enquiryForm');
+  enquiryForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const course = document.getElementById('course').value;
+    const message = document.getElementById('message').value.trim();
+    let text = `Hi, I'd like to enrol at Indra Biology.%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AProgram: ${encodeURIComponent(course)}`;
+    if(message){ text += `%0AMessage: ${encodeURIComponent(message)}`; }
+    window.open(`https://wa.me/919771722233?text=${text}`, '_blank');
+  });
+</script>
+</body>
+</html>
