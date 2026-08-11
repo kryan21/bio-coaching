@@ -182,14 +182,30 @@
   .chart-panel{background:linear-gradient(165deg,#fff 0%,#fff 55%,var(--paper-warm) 100%);border:1px solid var(--line);border-radius:20px;padding:2rem 1.6rem 1.4rem;box-shadow:var(--shadow);}
   .chart-panel .tag{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-400);display:block;margin-bottom:1.4rem;}
   .col-chart-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:.2rem;}
-  .col-chart{display:flex;align-items:flex-end;gap:.55rem;height:170px;min-width:100%;}
-  .col-bar{flex:1;min-width:26px;display:flex;flex-direction:column;align-items:center;height:100%;}
+  .col-chart{display:flex;align-items:flex-end;gap:.55rem;height:170px;width:100%;}
+  .col-bar{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;height:100%;}
   .col-val{font-family:'Space Mono',monospace;font-size:.72rem;font-weight:700;color:var(--navy-950);margin-bottom:.4rem;white-space:nowrap;}
   .col-track{position:relative;width:100%;max-width:28px;flex:1;background:var(--paper-warm,var(--paper));border-radius:6px 6px 3px 3px;overflow:hidden;display:flex;align-items:flex-end;}
   .col-fill{width:100%;height:0;border-radius:6px 6px 3px 3px;background:linear-gradient(180deg,var(--gold-300) 0%,var(--gold-500) 22%,var(--green-500) 60%,var(--green-600) 100%);box-shadow:0 0 0 1px rgba(255,255,255,.15) inset;transition:height 1.4s var(--ease);}
   .col-yr{font-family:'Space Mono',monospace;font-size:.65rem;color:var(--ink-400);margin-top:.5rem;white-space:nowrap;}
   @media (max-width:900px){.results-grid{grid-template-columns:1fr;}}
-  @media (max-width:560px){.results-section{padding:4rem 0;}.col-chart{height:150px;}.col-bar{min-width:24px;}}
+  @media (max-width:560px){
+    .results-section{padding:4rem 0;}
+    .chart-panel{padding:1.5rem 1rem 1.2rem;}
+    .col-chart{height:150px;gap:.3rem;min-width:0;}
+    .col-chart-wrap{overflow-x:visible;}
+    .col-bar{min-width:0;}
+    .col-track{max-width:22px;}
+    .col-val{font-size:.6rem;}
+    .col-yr{font-size:.56rem;margin-top:.35rem;}
+  }
+  @media (max-width:400px){
+    .chart-panel{padding:1.3rem .8rem 1rem;}
+    .col-chart{height:130px;gap:.2rem;}
+    .col-track{max-width:18px;}
+    .col-val{font-size:.54rem;}
+    .col-yr{font-size:.5rem;}
+  }
 
   /* ---------- programs: tab switcher ---------- */
   .programs-section{padding:6.5rem 0;background:var(--navy-950);}
@@ -611,17 +627,17 @@
       <span class="tag">NEET Selections by Year</span>
       <div class="col-chart-wrap">
         <div class="col-chart">
-          <div class="col-bar"><span class="col-val count-up" data-count="15">0</span><div class="col-track"><div class="col-fill" data-target="13"></div></div><span class="col-yr">2010</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="58">0</span><div class="col-track"><div class="col-fill" data-target="51"></div></div><span class="col-yr">2014</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="79">0</span><div class="col-track"><div class="col-fill" data-target="69"></div></div><span class="col-yr">2016</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="63">0</span><div class="col-track"><div class="col-fill" data-target="55"></div></div><span class="col-yr">2019</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="99">0</span><div class="col-track"><div class="col-fill" data-target="87"></div></div><span class="col-yr">2020</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="114">0</span><div class="col-track"><div class="col-fill" data-target="100"></div></div><span class="col-yr">2021</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="95">0</span><div class="col-track"><div class="col-fill" data-target="83"></div></div><span class="col-yr">2022</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="45">0</span><div class="col-track"><div class="col-fill" data-target="39"></div></div><span class="col-yr">2023</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="71">0</span><div class="col-track"><div class="col-fill" data-target="62"></div></div><span class="col-yr">2024</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="25">0</span><div class="col-track"><div class="col-fill" data-target="22"></div></div><span class="col-yr">2025</span></div>
-          <div class="col-bar"><span class="col-val count-up" data-count="88">0</span><div class="col-track"><div class="col-fill" data-target="77"></div></div><span class="col-yr">2026</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="15">0</span><div class="col-track"><div class="col-fill" data-target="13"></div></div><span class="col-yr">'10</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="58">0</span><div class="col-track"><div class="col-fill" data-target="51"></div></div><span class="col-yr">'14</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="79">0</span><div class="col-track"><div class="col-fill" data-target="69"></div></div><span class="col-yr">'16</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="63">0</span><div class="col-track"><div class="col-fill" data-target="55"></div></div><span class="col-yr">'19</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="99">0</span><div class="col-track"><div class="col-fill" data-target="87"></div></div><span class="col-yr">'20</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="114">0</span><div class="col-track"><div class="col-fill" data-target="100"></div></div><span class="col-yr">'21</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="95">0</span><div class="col-track"><div class="col-fill" data-target="83"></div></div><span class="col-yr">'22</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="45">0</span><div class="col-track"><div class="col-fill" data-target="39"></div></div><span class="col-yr">'23</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="71">0</span><div class="col-track"><div class="col-fill" data-target="62"></div></div><span class="col-yr">'24</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="25">0</span><div class="col-track"><div class="col-fill" data-target="22"></div></div><span class="col-yr">'25</span></div>
+          <div class="col-bar"><span class="col-val count-up" data-count="88">0</span><div class="col-track"><div class="col-fill" data-target="77"></div></div><span class="col-yr">'26</span></div>
         </div>
       </div>
     </div>
